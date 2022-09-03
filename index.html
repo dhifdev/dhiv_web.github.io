@@ -7,29 +7,35 @@
     <title>Tugas Web Programming</title>
     <style>
       body {
-        background-color: darkgrey;
+        background-image: url(image.jpg);
         display: block;
         justify-content: center;
       }
       .Judul {
-        color: white;
         margin-top: 150px;
         text-align: center;
       }
 
+      .Judul h1 {
+        font-size: 30px;
+      }
+
       .kolom {
-        background-color: aliceblue;
+        background: rgba(255, 255, 255, 0.1);
         justify-content: center;
         margin: auto;
         width: 300px;
         height: 350px;
         border-radius: 15px;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
+        transition: 0.4s;
       }
 
       .kolom:hover {
         transform: scale(1.1);
+        transition: 0.3s;
         opacity: 100%;
+        background: rgba(255, 255, 255, 0.7);
         box-shadow: 0 8px 16px 0 darkblue;
       }
 
@@ -38,7 +44,7 @@
       }
 
       .Judul {
-        background-color: gray;
+        background-color: rgba(255, 255, 255, 0.1);
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
         height: 50px;
@@ -46,15 +52,30 @@
 
       .Data {
         height: 70px;
-        margin-top: 150px;
+        margin-top: 15px;
+      }
+
+      .Data h2 {
+        margin: 0;
+        font-size: 25px;
+        color: black;
+      }
+
+      .hero {
+        width: 300px;
+        height: 200px;
+        background-image: url(logo.png);
+        background-position: center;
+        background-size: cover;
       }
     </style>
   </head>
   <body>
     <div class="kolom">
       <div class="Judul">
-        <h1>My Biodata</h1>
+        <h1>Card Name</h1>
       </div>
+      <div class="hero"></div>
       <div class="Data">
         <h2>Adhivia Julian</h2>
         <h2>41215568</h2>
