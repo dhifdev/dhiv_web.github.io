@@ -10,7 +10,9 @@
         background-color: lightslategray;
         height: 100vh;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
       }
       .Judul {
         text-align: center;
@@ -33,7 +35,7 @@
         transform: scale(1.1);
         transition: 0.3s;
         opacity: 100%;
-        background: rgba(255, 255, 255, 0.7);
+        background: white;
         box-shadow: 0 8px 16px 0 darkblue;
       }
 
@@ -59,6 +61,11 @@
         background-position: center;
         background-size: cover;
       }
+
+      .tombol {
+        margin-top: 20px;
+        border: solid;
+      }
     </style>
   </head>
   <body>
@@ -71,6 +78,9 @@
         <h2>Adhivia Julian</h2>
         <h2>41215568</h2>
       </div>
+    </div>
+    <div class="tombol">
+      <button>Friend</button>
     </div>
   </body>
 </html>
