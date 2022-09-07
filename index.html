@@ -7,7 +7,9 @@
     <title>Tugas Web Programming</title>
     <style>
       body {
-        background-color: lightslategray;
+        background-image: url(image.jpg);
+        background-size: cover;
+        background-position: center;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -29,6 +31,7 @@
         border-radius: 15px;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
         transition: 0.4s;
+        border: 4px solid;
       }
 
       .kolom:hover {
@@ -62,9 +65,82 @@
         background-size: cover;
       }
 
-      .tombol {
-        margin-top: 20px;
-        border: solid;
+      .pencet1 {
+        width: 180px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin-top: 30px;
+        margin-right: 25px;
+        border: 4px solid;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+      }
+
+      .pencet1:hover {
+        transform: scale(1.1);
+        transition: 0.2s;
+        background-color: aliceblue;
+        box-shadow: 0 6px 10px 0 darkblue;
+      }
+
+      .pencet2 {
+        width: 180px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin-top: 30px;
+        border: 4px solid;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+      }
+
+      .pencet2:hover {
+        transform: scale(1.1);
+        transition: 0.2s;
+        background-color: aliceblue;
+        box-shadow: 0 6px 10px 0 darkblue;
+      }
+
+      .pencet3 {
+        width: 180px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin-top: 30px;
+        margin-left: 25px;
+        border: 4px solid;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+      }
+
+      .pencet3:hover {
+        transform: scale(1.1);
+        transition: 0.2s;
+        background-color: aliceblue;
+        box-shadow: 0 6px 10px 0 darkblue;
+      }
+
+      .pencet1 h4 {
+        text-align: center;
+        margin: 15px;
+      }
+
+      .pencet2 h4 {
+        text-align: center;
+        margin: 15px;
+      }
+
+      .pencet3 h4 {
+        text-align: center;
+        margin: 15px;
+      }
+
+      li {
+        display: inline-flex;
       }
     </style>
   </head>
@@ -79,8 +155,10 @@
         <h2>41215568</h2>
       </div>
     </div>
-    <div class="tombol">
-      <button>Friend</button>
-    </div>
+    <li>
+      <div class="pencet1"><h4>Top 10 Best Friends</h4></div>
+      <div class="pencet2"><h4>Top 5 Best Friends</h4></div>
+      <div class="pencet3"><h4>Table JQuery</h4></div>
+    </li>
   </body>
 </html>
