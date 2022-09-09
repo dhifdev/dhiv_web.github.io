@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
     <style>
       body {
         height: 100vh;
@@ -61,7 +66,7 @@
   </head>
   <body>
     <center>
-      <div class="judul"><h2>Top 5 Best Friend</h2></div>
+      <div class="judul"><h2>Top JQuery Best Friends</h2></div>
       <table border="1" cellpadding="15" cellspacing="5">
         <tr>
           <th>No</th>
@@ -71,38 +76,54 @@
         </tr>
         <tr>
           <td>1</td>
-          <td>Eti Rohayati</td>
-          <td>Ciamis</td>
-          <td>Edit | Hapus</td>
+          <td class="text" id="nama__1">Eti Rohayati</td>
+          <td class="text" id="alamat__1">Ciamis</td>
+          <td class="text" id="edit__1">Hapus</td>
         </tr>
         <tr>
           <td>2</td>
-          <td>Muhammad Firly Ramadan</td>
-          <td>Sumber</td>
-          <td>Edit | Hapus</td>
+          <td class="text" id="nama__2">Muhammad Firly Ramadan</td>
+          <td class="text" id="alamat__2">Sumber</td>
+          <td class="text" id="edit__2">Hapus</td>
         </tr>
         <tr>
           <td>3</td>
-          <td>Rizal Rayan Firdaus</td>
-          <td>Sumber</td>
-          <td>Edit | Hapus</td>
+          <td class="text" id="nama__3">Rizal Rayan Firdaus</td>
+          <td class="text" id="alamat__3">Sumber</td>
+          <td class="text" id="edit__3">Hapus</td>
         </tr>
         <tr>
           <td>4</td>
-          <td>Hendry Rianto</td>
-          <td>Ciamis</td>
-          <td>Edit | Hapus</td>
+          <td class="text" id="nama__4">Hendry Rianto</td>
+          <td class="text" id="alamat__4">Ciamis</td>
+          <td class="text" id="edit__4">Hapus</td>
         </tr>
         <tr>
           <td>5</td>
-          <td>Peri Hidayat</td>
-          <td>Tasikmalaya</td>
-          <td>Edit | Hapus</td>
+          <td class="text" id="nama__5">Peri Hidayat</td>
+          <td class="text" id="alamat__5">Tasikmalaya</td>
+          <td class="text" id="edit__5">Hapus</td>
         </tr>
       </table>
       <a onClick="alert('Kembali ke halaman utama?')" href="../index.html">
         <div class="tombol">Kembali</div>
       </a>
     </center>
+    <script>
+      $(document).ready(function () {
+        $(".text").click(function () {
+          let text = $(this).text();
+          alert(`Anda memilih cell yang berisi "${text}"`);
+          if (text != "Hapus") {
+            let text2 = prompt("Mau diubah?:", text);
+            if (!text2) return;
+            $(this).text(text2);
+          } else {
+            let yakin = confirm("Yakin dihapus?");
+            if (!yakin) return;
+          }
+        });
+      });
+    </script>
   </body>
 </html>
