@@ -13,7 +13,13 @@
       <div class="forml">
         <div class="badan">
           <label>No Pendaftaran</label>
-          <input type="tel" class="masukan" name="nopendaftaran" />
+          <input
+            type="tel"
+            class="masukan"
+            name="nopendaftaran"
+            autofocus
+            required
+          />
         </div>
         <div class="badan">
           <label>Jurusan</label>
@@ -56,11 +62,17 @@
         </div>
         <div class="badan">
           <label>Email</label>
-          <input type="text" class="masukan" name="email" />
+          <input type="email" class="masukan" name="email" required />
         </div>
         <div class="badan">
           <label>No hp</label>
-          <input type="tel" class="masukan" name="nohp" />
+          <input
+            type="tel"
+            class="masukan"
+            name="nohp"
+            pattern="(\+62|62|0)8[1-9]{6,9}$"
+            placeholder="+62"
+          />
         </div>
         <div class="badan">
           <label>Alamat</label>
