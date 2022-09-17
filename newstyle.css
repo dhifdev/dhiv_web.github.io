@@ -3,8 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: #f2f2f2;
+
+.belakang {
+  background-image: url(./img/bg1.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 nav {
   background-color: #1b1b1b;
@@ -91,7 +97,36 @@ nav .pemilik {
 input {
   display: none;
 }
+.bio {
+  margin-left: 8%;
+  margin-top: 15%;
+  width: 325px;
+}
+.bio h1 {
+  margin-bottom: 15px;
+  color: rgb(199, 199, 223);
+  text-shadow: 2px 12px 15px rgb(0, 0, 0);
+  transition: 0.5s;
+}
+.bio h1:hover {
+  color: blue;
+  transition: 0.3s;
+}
+p {
+  color: rgb(255, 255, 255);
+  line-height: 22px;
+  font-size: 22px;
+  text-shadow: 2px 12px 15px rgb(0, 0, 0);
+  transition: 0.5s;
+}
+p:hover {
+  color: blue;
+  transition: 0.3s;
+}
 @media all and (max-width: 540px) {
+  body {
+    height: 100vh;
+  }
   nav ul {
     margin-right: 0px;
     float: left;
@@ -155,5 +190,8 @@ input {
   }
   [id^="btn"]:checked + ul {
     display: block;
+  }
+  .bio {
+    width: 100%;
   }
 }
