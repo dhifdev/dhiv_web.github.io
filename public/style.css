@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 17%;
+}
+.icon {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon a {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+  background-color: gray;
+  line-height: 60px;
+  margin: 0 15px;
+  border-radius: 50%;
+  box-shadow: 0 5px 4px rgb(0, 0, 0, 0.5);
+  transition: 0.4s ease;
+}
+
+.icon a:hover {
+  color: white;
+  transform: translate(0, -30px);
+  box-shadow: 0 20px 8px rgb(0, 0, 0, 0.7);
+}
+
+.icon a:nth-child(1):hover {
+  background-color: #3b5998;
+}
+.icon a:nth-child(2):hover {
+  background-color: #e01a69;
+}
+.icon a:nth-child(3):hover {
+  background-color: #ff0000;
+}
+.icon a:nth-child(4):hover {
+  background-color: #0ed238;
+}
