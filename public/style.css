@@ -3,9 +3,45 @@
   padding: 0;
 }
 
+nav {
+  background-color: #1b1b1b;
+}
+
+nav:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+nav .pemilik {
+  float: left;
+  color: white;
+  font-size: 27px;
+  font-weight: 600px;
+  line-height: 70px;
+  padding-left: 60px;
+}
+
+nav .back-home {
+  float: right;
+  font-size: 20px;
+  font-weight: 600px;
+  line-height: 70px;
+  padding-right: 20px;
+}
+
+nav .back-home a {
+  text-decoration: none;
+  justify-content: center;
+  color: white;
+}
+
+nav .back-home a:hover {
+  color: blue;
+}
 h2 {
   text-align: center;
-  margin-top: 17%;
+  margin-top: 12%;
 }
 .icon {
   display: flex;
