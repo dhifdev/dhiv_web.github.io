@@ -74,35 +74,35 @@
           <th>Alamat</th>
           <th>Aksi</th>
         </tr>
-        <tr>
+        <tr id="kotak">
           <td>1</td>
-          <td class="text" id="nama__1">Eti Rohayati</td>
-          <td class="text" id="alamat__1">Ciamis</td>
-          <td class="text" id="edit__1">Hapus</td>
+          <td class="inti">Eti Rohayati</td>
+          <td class="inti">Ciamis</td>
+          <td class="hapus" id="hapus__1">Hapus</td>
         </tr>
-        <tr>
+        <tr id="kotak">
           <td>2</td>
-          <td class="text" id="nama__2">Muhammad Firly Ramadan</td>
-          <td class="text" id="alamat__2">Sumber</td>
-          <td class="text" id="edit__2">Hapus</td>
+          <td class="inti">Muhammad Firly Ramadan</td>
+          <td class="inti">Sumber</td>
+          <td class="hapus" id="hapus__2">Hapus</td>
         </tr>
-        <tr>
+        <tr id="kotak">
           <td>3</td>
-          <td class="text" id="nama__3">Rizal Rayan Firdaus</td>
-          <td class="text" id="alamat__3">Sumber</td>
-          <td class="text" id="edit__3">Hapus</td>
+          <td class="inti">Rizal Rayan Firdaus</td>
+          <td class="inti">Sumber</td>
+          <td class="hapus" id="hapus__3">Hapus</td>
         </tr>
-        <tr>
+        <tr id="kotak">
           <td>4</td>
-          <td class="text" id="nama__4">Hendry Rianto</td>
-          <td class="text" id="alamat__4">Ciamis</td>
-          <td class="text" id="edit__4">Hapus</td>
+          <td class="inti">Hendry Rianto</td>
+          <td class="inti">Ciamis</td>
+          <td class="hapus" id="hapus__4">Hapus</td>
         </tr>
-        <tr>
+        <tr id="kotak">
           <td>5</td>
-          <td class="text" id="nama__5">Peri Hidayat</td>
-          <td class="text" id="alamat__5">Tasikmalaya</td>
-          <td class="text" id="edit__5">Hapus</td>
+          <td class="inti">Peri Hidayat</td>
+          <td class="inti">Tasikmalaya</td>
+          <td class="hapus" id="hapus__5">Hapus</td>
         </tr>
       </table>
       <a onClick="alert('Kembali ke halaman utama?')" href="../index.html">
@@ -110,11 +110,28 @@
       </a>
     </center>
     <script>
-      $(document).ready(function(){
-        $('.kotak')click(function(){
-
-        })
-      })
+      $(document).ready(function () {
+        $(".hapus").click(function () {
+          let yakin = confirm("Anda yakin ingin menghapusnya?");
+          if (!yakin) return;
+          let id = $(this).prop("id");
+          let rid = id.split("__");
+          let kotak_ke = rid[1];
+          $("#kotak").fadeOut();
+        });
+        $(".inti").click(function () {
+          let inti = $(this).text();
+          alert(`You select this cell "${inti}"`);
+          if (inti != "Hapus") {
+            let inti2 = prompt("Do  you want to change?:", inti);
+            if (!inti2) return;
+            $(this).text(inti2);
+          } else {
+            let yakin = confirm("Are you sure?");
+            if (!yakin) return;
+          }
+        });
+      });
     </script>
   </body>
 </html>
