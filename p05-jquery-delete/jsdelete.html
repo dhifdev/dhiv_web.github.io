@@ -74,31 +74,31 @@
           <th>Alamat</th>
           <th>Aksi</th>
         </tr>
-        <tr id="kotak">
+        <tr id="kotak__1">
           <td>1</td>
           <td class="inti">Eti Rohayati</td>
           <td class="inti">Ciamis</td>
           <td class="hapus" id="hapus__1">Hapus</td>
         </tr>
-        <tr id="kotak">
+        <tr id="kotak__2">
           <td>2</td>
           <td class="inti">Muhammad Firly Ramadan</td>
           <td class="inti">Sumber</td>
           <td class="hapus" id="hapus__2">Hapus</td>
         </tr>
-        <tr id="kotak">
+        <tr id="kotak__3">
           <td>3</td>
           <td class="inti">Rizal Rayan Firdaus</td>
           <td class="inti">Sumber</td>
           <td class="hapus" id="hapus__3">Hapus</td>
         </tr>
-        <tr id="kotak">
+        <tr id="kotak__4">
           <td>4</td>
           <td class="inti">Hendry Rianto</td>
           <td class="inti">Ciamis</td>
           <td class="hapus" id="hapus__4">Hapus</td>
         </tr>
-        <tr id="kotak">
+        <tr id="kotak__5">
           <td>5</td>
           <td class="inti">Peri Hidayat</td>
           <td class="inti">Tasikmalaya</td>
@@ -117,7 +117,7 @@
           let id = $(this).prop("id");
           let rid = id.split("__");
           let kotak_ke = rid[1];
-          $("#kotak").fadeOut();
+          $("#kotak__" + kotak_ke).fadeOut();
         });
         $(".inti").click(function () {
           let inti = $(this).text();
