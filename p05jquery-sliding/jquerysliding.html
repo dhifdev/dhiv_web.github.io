@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Sliding</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      body {
+        background-image: url(../img/bg1.jpg);
+      }
+      #kotak {
+        padding: 10px;
+        color: white;
+        text-align: center;
+        background-color: blue;
+        border-top: 5px solid black;
+        border-right: 5px solid black;
+        border-left: 5px solid black;
+        border-bottom: 5px solid black;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      #kotak:hover {
+        background-color: rgb(21, 21, 150);
+        cursor: pointer;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+      }
+
+      #isi {
+        padding: 10px;
+        color: white;
+        text-align: center;
+        background-color: blue;
+        border-left: 5px solid black;
+        border-right: 5px solid black;
+        border-bottom: 5px solid black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+      #isi {
+        padding: 50px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="kotak">Home</div>
+    <div id="isi">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eum
+      perspiciatis eaque. Non eum corporis delectus facere pariatur
+      reprehenderit odio repellat, consectetur aliquid magni quo quidem
+      voluptatem numquam inventore minima.
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#kotak").click(function () {
+          $("#isi").slideToggle("faster");
+        });
+      });
+    </script>
+  </body>
+</html>
