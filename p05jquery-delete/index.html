@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Delete</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+      .tombol {
+        width: 100px;
+        height: 20px;
+        background-color: white;
+        margin-top: 25px;
+        border: 3px solid;
+        border-radius: 15px;
+        transition: 0.3s;
+      }
+
+      .tombol:hover {
+        background-color: lightgray;
+        transform: scale(1.1);
+        transition: 0.2s;
+      }
+      table {
+        border: 4px solid;
+      }
+      table tr th {
+        background-color: lightgrey;
+        transition: 0.4s;
+      }
+
+      table tr th:hover {
+        background-color: aliceblue;
+        transform: scale(1.1);
+        transition: 0.2s;
+      }
+
+      table tr td {
+        background-color: cornsilk;
+        transition: 0.4s;
+      }
+
+      table tr td:hover {
+        background-color: lightgrey;
+        transform: scaleX(1.1);
+        transition: 0.2s;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        background-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div class="judul"><h2>Top JQuery Best Friends</h2></div>
+      <table border="1" cellpadding="15" cellspacing="5">
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Alamat</th>
+          <th>Aksi</th>
+        </tr>
+        <tr id="kotak__1">
+          <td>1</td>
+          <td class="inti">Eti Rohayati</td>
+          <td class="inti">Ciamis</td>
+          <td class="hapus" id="hapus__1">Hapus</td>
+        </tr>
+        <tr id="kotak__2">
+          <td>2</td>
+          <td class="inti">Muhammad Firly Ramadan</td>
+          <td class="inti">Sumber</td>
+          <td class="hapus" id="hapus__2">Hapus</td>
+        </tr>
+        <tr id="kotak__3">
+          <td>3</td>
+          <td class="inti">Rizal Rayan Firdaus</td>
+          <td class="inti">Sumber</td>
+          <td class="hapus" id="hapus__3">Hapus</td>
+        </tr>
+        <tr id="kotak__4">
+          <td>4</td>
+          <td class="inti">Hendry Rianto</td>
+          <td class="inti">Ciamis</td>
+          <td class="hapus" id="hapus__4">Hapus</td>
+        </tr>
+        <tr id="kotak__5">
+          <td>5</td>
+          <td class="inti">Peri Hidayat</td>
+          <td class="inti">Tasikmalaya</td>
+          <td class="hapus" id="hapus__5">Hapus</td>
+        </tr>
+      </table>
+      <a onClick="alert('Kembali ke halaman utama?')" href="../index.html">
+        <div class="tombol">Kembali</div>
+      </a>
+    </center>
+    <script>
+      $(document).ready(function () {
+        $(".hapus").click(function () {
+          let yakin = confirm("Anda yakin ingin menghapusnya?");
+          if (!yakin) return;
+          let id = $(this).prop("id");
+          let rid = id.split("__");
+          let kotak_ke = rid[1];
+          $("#kotak__" + kotak_ke).fadeOut();
+        });
+        $(".inti").click(function () {
+          let inti = $(this).text();
+          alert(`You select this cell "${inti}"`);
+          if (inti != "Hapus") {
+            let inti2 = prompt("Do  you want to change?:", inti);
+            if (!inti2) return;
+            $(this).text(inti2);
+          } else {
+            let yakin = confirm("Are you sure?");
+            if (!yakin) return;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
