@@ -16,9 +16,36 @@ nav {
   background-color: #1b1b1b;
 }
 
-#bawah {
-  scroll-behavior: smooth;
-  animation-duration: 0.5s;
+#isi-home {
+  padding: 10px;
+  width: 371px;
+  color: white;
+  margin: auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  /* border-left: 5px solid white;
+  border-right: 5px solid white;
+  border-bottom: 5px solid white; */
+}
+
+#isi-tugas {
+  padding: 10px;
+  width: 371px;
+  color: white;
+  margin: auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  /* border-left: 5px solid white;
+  border-right: 5px solid white;
+  border-bottom: 5px solid white; */
+}
+
+#isi-tugas {
+  display: none;
+}
+
+#isi-home {
+  display: none;
 }
 nav:after {
   content: "";

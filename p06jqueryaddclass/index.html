@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Sliding</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      body {
+        background-image: url(../img/bg1.jpg);
+      }
+      #kotak {
+        padding: 10px;
+        width: 451px;
+        color: white;
+        margin: auto;
+        text-align: center;
+        background-color: blue;
+        border-top: 5px solid white;
+        border-right: 5px solid white;
+        border-left: 5px solid white;
+        border-bottom: 5px solid white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        transition: ease-in-out 0.5s;
+      }
+
+      #kotak:hover {
+        background-color: rgb(21, 21, 150);
+        cursor: pointer;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+        transition: ease-in-out 0.5s;
+      }
+
+      #isi {
+        padding: 10px;
+        width: 371px;
+        color: white;
+        margin: auto;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.1);
+        border-left: 5px solid white;
+        border-right: 5px solid white;
+        border-bottom: 5px solid white;
+      }
+
+      #isi2 {
+        padding: 10px;
+        width: 371px;
+        color: white;
+        margin: auto;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.1);
+        border-left: 5px solid white;
+        border-right: 5px solid white;
+        border-bottom: 5px solid white;
+      }
+
+      #tombol {
+        padding: 10px;
+        bottom: 20%;
+        width: 300px;
+        color: white;
+        margin: 20px auto;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        transition: ease-in-out 0.5s;
+      }
+
+      #tombol:hover {
+        background-color: blue;
+        transition: ease-in-out 0.5s;
+        cursor: pointer;
+      }
+
+      #isi {
+        padding: 50px;
+        display: none;
+      }
+
+      #isi2 {
+        padding: 50px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="kotak">About me</div>
+    <div id="isi" class="tombol">
+      My name is adhivia julian, I am a student of STMIK IKMI, I come from
+      Ciamis, I like to learn web programming
+      <div id="tombol">Click Me</div>
+    </div>
+    <div id="isi2" class="isi2">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ipsa
+      ex, inventore iure eligendi doloribus deserunt, esse ad tempore, culpa
+      assumenda consequatur suscipit nemo possimus perspiciatis vero hic magni
+      necessitatibus.
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("tombol").click(function () {
+          $("tombol").addClass("isi2");
+        });
+        // $(document).ready(function () {
+        //   $("#tombol").click(function () {
+        //     $("#isi2").slideToggle("faster");
+        //   });
+      });
+    </script>
+  </body>
+</html>
