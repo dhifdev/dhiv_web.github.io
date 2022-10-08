@@ -5,10 +5,10 @@
 }
 
 .belakang {
-  background-image: url(./img/bg1.jpg);
-  height: 100vh;
-  background-repeat: no-repeat;
   width: 100%;
+  height: 100vh;
+  background-image: url(./img/bg1.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -16,37 +16,6 @@ nav {
   background-color: #1b1b1b;
 }
 
-#isi-home {
-  padding: 10px;
-  width: 371px;
-  color: white;
-  margin: auto;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.1);
-  /* border-left: 5px solid white;
-  border-right: 5px solid white;
-  border-bottom: 5px solid white; */
-}
-
-#isi-tugas {
-  padding: 10px;
-  width: 371px;
-  color: white;
-  margin: auto;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.1);
-  /* border-left: 5px solid white;
-  border-right: 5px solid white;
-  border-bottom: 5px solid white; */
-}
-
-#isi-tugas {
-  display: none;
-}
-
-#isi-home {
-  display: none;
-}
 nav:after {
   content: "";
   clear: both;
@@ -120,72 +89,7 @@ nav .pemilik {
   line-height: 70px;
   padding-left: 60px;
 }
-.baris_2 {
-  margin-left: 40px;
-  font-size: 15px;
-}
-.tampil,
-.icon,
-input {
-  display: none;
-}
-.bio {
-  margin-left: 8%;
-  margin-top: 15%;
-  width: 325px;
-}
-.bio h1 {
-  margin-bottom: 15px;
-  color: rgb(199, 199, 223);
-  text-shadow: 2px 12px 15px rgb(0, 0, 0);
-  transition: 0.5s;
-}
-.bio h1:hover {
-  color: blue;
-  transition: 0.3s;
-}
-p {
-  color: rgb(255, 255, 255);
-  line-height: 22px;
-  font-size: 22px;
-  text-shadow: 2px 12px 15px rgb(0, 0, 0);
-  transition: 0.5s;
-}
-p:hover {
-  color: blue;
-  transition: 0.3s;
-}
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #1b1b1b;
-  height: auto;
-  padding-top: 40px;
-  width: 100vw;
-  color: white;
-}
-.konten-bawah {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-h3 {
-  font-size: 2.1rem;
-  font-weight: 500;
-  text-transform: capitalize;
-  line-height: 3rem;
-}
-p {
-  max-width: 500px;
-  margin: 10px auto;
-  line-height: 28px;
-  font-size: 14px;
-  color: #cacdd2;
-}
+
 @media all and (max-width: 540px) {
   body {
     height: 100vh;
