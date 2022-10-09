@@ -9,9 +9,15 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 3rem;
   margin: auto;
+}
+
+.bungkus-judul {
+  margin-bottom: 2rem;
 }
 
 .gambar {
@@ -23,6 +29,13 @@
   object-fit: cover;
   width: 100%;
   height: 142px;
+}
+
+.bungkus-kertas {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 3rem;
 }
 
 .kertas {
@@ -79,4 +92,59 @@
 
 .tombol a:hover {
   color: red;
+}
+
+.bungkus-skills h2 {
+  margin-bottom: -5rem;
+}
+
+.bungkus-konten {
+  margin: auto;
+  width: 72rem;
+  height: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills {
+  width: 563px;
+  height: 380px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.skil-s1 {
+  display: flex;
+  gap: 2rem;
+}
+
+.skil-s2 {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+#icon {
+  transition: 0.5s;
+}
+
+#icon:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+}
+
+.bungkus-abi img {
+  image-orientation: flip;
+}
+
+.bungkusabout1 {
+  width: 72rem;
+  height: 720px;
+  margin: auto;
+  align-items: center;
+  gap: 4rem;
+  display: flex;
 }

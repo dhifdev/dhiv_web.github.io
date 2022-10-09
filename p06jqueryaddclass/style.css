@@ -36,10 +36,10 @@
 .kresek2,
 .kresek3,
 .kresek4 {
-  width: 100%;
+  width: 50%;
   max-width: 72rem;
   height: 400px;
-  background-color: blue;
+  background-color: #b7c4cf;
   margin: auto;
   border-radius: 10px;
   display: none;
