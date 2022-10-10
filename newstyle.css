@@ -1,8 +1,62 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat";
+  font-family: "Inria-Sans";
+}
+
+html {
+  /* scroll-behavior: smooth; */
+}
+.baris-konten {
+  width: 100%;
+  top: 0;
+  display: flex;
+}
+
+.isi-konten {
+  width: 100%;
+  max-width: 72rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 1rem;
+}
+
+.isi-konten ul {
+  list-style: none;
+  display: flex;
+}
+
+.isi-konten li {
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+.isi-konten li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.isi-konten li a:hover {
+  color: red;
+}
+
+.pembungkus-home {
+  width: 100%;
+  max-width: 72rem;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  margin: auto;
+}
+
+.bungkus-ilustration {
+  margin-top: 3rem;
+  margin-right: 2rem;
 }
 
 .pembungkus-kertas {
@@ -29,6 +83,45 @@
   object-fit: cover;
   width: 100%;
   height: 142px;
+}
+
+.bungkus-cv {
+  margin-top: 3rem;
+}
+
+.cv {
+  width: 120px;
+  height: 35px;
+  border: 2px solid;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  transition: 0.5s;
+}
+
+.cv a {
+  text-decoration: none;
+  color: black;
+  margin: auto;
+  font-weight: bold;
+}
+
+.cv a:hover {
+  color: white;
+}
+
+.cv:hover {
+  transition: ease-in-out 0.3s;
+  background-color: #94949c;
+}
+
+.bungkus-nama h1 {
+  letter-spacing: 5px;
+}
+
+.bungkus-nama p {
+  font-size: 25px;
 }
 
 .bungkus-kertas {
@@ -136,12 +229,9 @@
   transition: ease-in-out 0.3s;
 }
 
-.bungkus-abi img {
-  image-orientation: flip;
-}
-
 .bungkusabout1 {
-  width: 72rem;
+  width: 100%;
+  max-width: 72rem;
   height: 720px;
   margin: auto;
   align-items: center;
