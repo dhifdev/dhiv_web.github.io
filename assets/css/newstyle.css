@@ -381,3 +381,30 @@ html {
   justify-content: center;
   padding: 20px;
 }
+
+@media only screen and (max-width: 640px) {
+  .pembungkus-home {
+    width: 100%;
+    max-width: 350px;
+  }
+  .bungkus-ilustration img {
+    width: 95px;
+    height: 110px;
+    margin-right: -25px;
+    margin-top: -50px;
+  }
+  .bungkus-nama p {
+    font-size: 12px;
+  }
+
+  .bungkus-nama h1 {
+    font-size: 14px;
+  }
+
+  .cv {
+    width: 44px;
+    height: 15px;
+    font-size: 5px;
+    margin-top: -40px;
+  }
+}
