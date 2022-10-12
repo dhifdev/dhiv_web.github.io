@@ -5,8 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="newstyle.css" />
+    <link rel="stylesheet" href="./assets/css/newstyle.css" />
     <link rel="icon" href="./img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <nav class="baris-konten">
@@ -31,7 +38,7 @@
           <p>Frontend Developer | Content Creator</p>
         </div>
         <div class="bungkus-cv">
-          <div class="cv"><a href="#">Download CV</a></div>
+          <div><a class="cv" href="#">Download CV</a></div>
         </div>
       </div>
       <div class="bungkus-ilustration">
@@ -98,7 +105,7 @@
       </div>
     </div>
     <div id="skills" class="bungkus-skills">
-      <h2 align="center">Skills</h2>
+      <h2 id="judul1" align="center">Skills</h2>
       <div class="bungkus-konten">
         <div class="poto-kartun">
           <img width="366px" height="319" src="./img/poto.svg" />
@@ -119,7 +126,7 @@
       </div>
     </div>
     <div id="about" class="bungkus-about">
-      <h2 align="center">About me</h2>
+      <h2 id="judul1" align="center">About me</h2>
       <div class="bungkusabout1">
         <div class="bungkus-bio">
           <p>I am a student at STMIK IKMI, my student ID number is 41215568, here I live in a rented house alone, I come from Ciamis.</p>
@@ -131,18 +138,18 @@
     </div>
     <div id="contact" class="bungkus-contact">
       <div class="bungkus-sosmed">
-        <div class="bungkus-icon">
-          <img width="35px" height="37px" src="./img/wa.png">
-        </div>
-        <div class="bungkus-icon">
-          <img width="35px" height="37px" src="./img/ig.png">
-        </div>
-        <div class="bungkus-icon">
-          <img width="40px" height="42px" src="./img/fb.png">
-        </div>
-        <div class="bungkus-icon">
-          <img width="43px" height="36px" src="./img/yt.png">
-        </div>
+        <div class="icon">
+      <a href="https://web.facebook.com/adhiv.dhivia"
+        ><i class="fa-brands fa-facebook-f"></i
+      ></a>
+      <a href="https://instagram.com/adhivvvvv?igshid=YmMyMTA2M2Y="
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+      <a href="https://www.youtube.com/channel/UCGftRI6KI9Pj4Uu_1k4I10w"
+        ><i class="fa-brands fa-youtube"></i
+      ></a>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
       </div>
       <div class="bungkus-contactme">
         <h3>Contact me</h3>
@@ -156,8 +163,8 @@
         </div>
         <div class="text">
             <textarea class="isitext" cols="30" rows="10" placeholder="Your message"></textarea>
-          <div class="submit">
-            <a href="#">Submit</a>
+          <div>
+            <a class="submit" href="#">Submit</a>
           </div>
         </div>
       </div>
