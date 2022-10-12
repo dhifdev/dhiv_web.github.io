@@ -6,12 +6,16 @@
 }
 
 html {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 .baris-konten {
   width: 100%;
   top: 0;
   display: flex;
+  position: fixed;
+  box-shadow: 5px 0 8px rgb(0, 0, 0, 0.6);
+  background-color: white;
+  z-index: 50;
 }
 
 .isi-konten {
@@ -21,7 +25,6 @@ html {
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  padding: 1rem;
 }
 
 .isi-konten ul {
@@ -52,6 +55,7 @@ html {
   justify-content: space-between;
   display: flex;
   margin: auto;
+  margin-top: 10rem;
 }
 
 .bungkus-ilustration {
@@ -237,4 +241,104 @@ html {
   align-items: center;
   gap: 4rem;
   display: flex;
+}
+
+.bungkus-contact {
+  width: 100%;
+  max-width: 72rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  gap: 10rem;
+}
+
+.bungkus-contactme {
+  width: 100%;
+  max-width: 420px;
+  height: 575px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.bungkus-contactme h3 {
+  margin-bottom: 20px;
+}
+
+.bungkus-email .email {
+  width: 180px;
+  border-radius: 5px;
+  border: 3px solid black;
+  padding: 5px;
+}
+
+.bungkus-nama .nama {
+  width: 180px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.bungkus-ne {
+  width: 100%;
+  max-width: 780px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  position: relative;
+}
+
+.text {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.text .isitext {
+  width: 400px;
+  height: 200px;
+  border-radius: 5px;
+  border: 3px solid black;
+  padding: 6px;
+}
+
+.submit {
+  text-align: center;
+  width: 100px;
+  height: 25px;
+  margin-top: 10px;
+  border: 3px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.submit a {
+  text-decoration: none;
+  margin-top: 2px;
+}
+
+.bungkus-sosmed {
+  display: flex;
+  gap: 1rem;
+}
+
+.bungkus-icon {
+  height: 62px;
+  width: 62px;
+  border-radius: 100%;
+  background-color: #94949c;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+}
+
+.bagian-bawah {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
