@@ -27,6 +27,10 @@ html {
   margin: auto;
 }
 
+.isi-konten .lis {
+  gap: 1rem;
+}
+
 .isi-konten ul {
   list-style: none;
   display: flex;
@@ -382,6 +386,8 @@ html {
   padding: 20px;
 }
 
+/* Responsive Unfinish */
+
 @media only screen and (max-width: 640px) {
   .pembungkus-home {
     width: 100%;
@@ -402,9 +408,28 @@ html {
   }
 
   .cv {
-    width: 44px;
-    height: 15px;
-    font-size: 5px;
+    width: 63px;
+    height: 20px;
+    font-size: 8px;
     margin-top: -40px;
+  }
+
+  .bungkus-pemilik img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .isi-konten ul li a {
+    font-size: 13px;
+  }
+
+  .isi-konten {
+    width: 350px;
+  }
+
+  .isi-konten .lis {
+    gap: 0.5px;
+    align-items: center;
+    justify-content: center;
   }
 }
