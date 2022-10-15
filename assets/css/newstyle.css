@@ -1,7 +1,53 @@
-h1 {
-  display: flex;
+.bungkus-pb {
+  width: 100%;
+  max-width: 72rem;
   align-items: center;
-  justify-content: center;
   margin: auto;
+  margin-top: 1rem;
+}
+
+.bungkus-nav {
+  padding: 11px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 5px 8px 15px 0px rgba(0, 0, 0, 0.8);
+}
+
+#isi_1,
+#isi_2,
+#isi_3 {
+  color: black;
   font-size: 20px;
+}
+
+.opsi {
+  border-radius: 3px;
+  border: none;
+  color: white;
+  padding: 7px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bungkus-hm {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 5px 8px 15px 0px rgba(0, 0, 0, 0.8);
+  text-align: justify;
+}
+
+.bungkus-isi {
+  max-width: 72rem;
+  background-color: white;
+  box-shadow: 5px 8px 15px 0px rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  text-align: justify;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: none;
 }

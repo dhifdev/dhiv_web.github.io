@@ -1,8 +1,15 @@
 $(document).ready(function () {
-  for (let x = 1; x <= 4; x++) {
-    $(`#menu${x}`).click(function () {
-      $(`.kresek${x}`).slideToggle("slow");
-      $(`.kresek${x}`).siblings().css("display", `none`);
-    });
-  }
+  $(".opsi").click(function () {
+    let id = $(this).prop("id");
+    let split = id.split("_");
+    let nu_aing = split[1];
+
+    $(".opsi").removeClass("aktif");
+    $("#isi_" + nu_aing).addClass("aktif");
+    $(".home").slideUp();
+    $("#konten_1").slideUp();
+    $("#konten_2").slideUp();
+    $("#konten_3").slideUp();
+    $("#konten_" + nu_aing).slideToggle();
+  });
 });

@@ -4,10 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Single Pages Application</title>
     <link rel="stylesheet" href="./assets/css/newstyle.css" />
   </head>
   <body>
-    <h1>-_+</h1>
+    <div class="bungkus-pb">
+      <div class="bungkus-nav">
+        <div class="wm">
+          <img width="45px" height="45px" src="./img/logo.png" />
+        </div>
+        <div class="menu-spa">
+          <span class="opsi aktif" id="isi_1">Home</span>
+          <span class="opsi" id="isi_2">Assignment</span>
+          <span class="opsi" id="isi_3">Contact</span>
+        </div>
+      </div>
+      <div class="bungkus-hm" id="konten_1" style="display: block">
+        <h2>Home</h2>
+      </div>
+      <div class="bungkus-isi" id="konten_2" style="display: none">
+        <h2>Assignment</h2>
+      </div>
+      <div class="bungkus-isi" id="konten_3" style="display: none">
+        <h2>Contact</h2>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/jquery.js"></script>
   </body>
 </html>
