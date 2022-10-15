@@ -41,8 +41,28 @@
   text-align: justify;
 }
 
+.bungkusabout1 {
+  width: 100%;
+  max-width: 72rem;
+  height: 600px;
+  margin: auto;
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.bungkus-bio p {
+  font-size: 20px;
+  margin-left: 2rem;
+}
+
+.bungkus-abi {
+  margin-right: -40px;
+}
+
 .bungkus-isi {
   max-width: 72rem;
+  height: 20rem;
   background-color: white;
   box-shadow: 5px 8px 15px 0px rgba(0, 0, 0, 0.8);
   padding: 10px;
@@ -50,4 +70,201 @@
   border-radius: 10px;
   margin-top: 10px;
   display: none;
+}
+
+#konten_2 {
+  max-width: 72rem;
+  height: 30rem;
+  background-color: white;
+  box-shadow: 5px 8px 15px 0px rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  text-align: justify;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: none;
+}
+
+.pembungkus-kertas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin: auto;
+}
+
+.bungkus-judul {
+  margin-bottom: 2rem;
+}
+
+.gambar {
+  width: 100%;
+  height: 142px;
+}
+
+.gambar img {
+  object-fit: cover;
+  width: 100%;
+  height: 142px;
+}
+
+.bungkus-cv {
+  margin-top: 3rem;
+}
+
+.cv {
+  width: 120px;
+  height: 35px;
+  border: 2px solid;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  transition: 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.cv:hover {
+  transition: ease-in-out 0.3s;
+  background-color: #94949c;
+  cursor: pointer;
+  color: white;
+}
+
+.bungkus-nama h1 {
+  letter-spacing: 5px;
+}
+
+.bungkus-nama p {
+  font-size: 25px;
+}
+
+.bungkus-kertas {
+  margin-top: -40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 3rem;
+}
+
+.kertas {
+  width: 240px;
+  height: 290px;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 10px 10px 8px 0px rgb(0, 0, 0, 0.6);
+  transition: 0.4s;
+}
+
+.kertas:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+  box-shadow: 5px 5px 15px 0px blue;
+}
+
+#judul1 {
+  font-size: 30px;
+  margin-top: 2rem;
+}
+
+.isi {
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+}
+
+.isi h2 {
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.isi p {
+  font-size: 13px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.tombol {
+  width: 80px;
+  height: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+
+.tombol a {
+  text-decoration: none;
+  font-size: 14px;
+  color: blue;
+}
+
+.tombol a:hover {
+  color: red;
+}
+
+.icon a {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+  background-color: gray;
+  line-height: 60px;
+  margin: 0 15px;
+  border-radius: 50%;
+  box-shadow: 0 5px 4px rgb(0, 0, 0, 0.5);
+  transition: 0.4s ease;
+}
+
+.bungkus-ct {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.bungkus-smd h2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 6rem;
+}
+
+.icon {
+  display: flex;
+  margin-left: 2rem;
+  margin-top: 5rem;
+}
+
+.icon a:hover {
+  color: white;
+  transform: translate(0, -30px);
+  box-shadow: 0 20px 8px rgb(0, 0, 0, 0.7);
+}
+
+.icon a:nth-child(1):hover {
+  background-color: #3b5998;
+}
+.icon a:nth-child(2):hover {
+  background-color: #e01a69;
+}
+.icon a:nth-child(3):hover {
+  background-color: #ff0000;
+}
+.icon a:nth-child(4):hover {
+  background-color: #0ed238;
 }
