@@ -286,7 +286,7 @@
   }
 
   .bungkus-abi img {
-    width: 400px;
+    width: 440px;
     height: 400px;
     margin-right: 6rem;
     margin-top: -3rem;
@@ -294,10 +294,11 @@
 
   .bungkus-kertas {
     flex-direction: column;
+    gap: 5rem;
   }
 
   #konten_2 {
-    height: 92rem;
+    height: 97rem;
   }
 
   .icon {
