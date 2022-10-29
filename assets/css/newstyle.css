@@ -268,3 +268,27 @@
 .icon a:nth-child(4):hover {
   background-color: #0ed238;
 }
+
+@media only screen and (max-width: 640px) {
+  .bungkusabout1 {
+    width: 100%;
+    max-width: 460px;
+    flex-direction: column;
+    margin-right: 3rem;
+  }
+
+  .bungkus-bio {
+    width: 100%;
+    max-width: 400px;
+    height: 640px;
+    font-size: 16px;
+    margin-right: 2rem;
+  }
+
+  .bungkus-abi img {
+    width: 380px;
+    height: 400px;
+    margin-right: 6rem;
+    margin-top: -3rem;
+  }
+}
